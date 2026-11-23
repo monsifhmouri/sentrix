@@ -1,0 +1,17 @@
+{
+  "data_dir": "~/.sentrix/projects",
+  "output_dir": "~/.sentrix/exports",
+  "concurrency": 3,
+  "rate_per_second": 1,
+  "export_formats": ["json", "html"],
+  "log_level": "warn",
+  "theme": "auto",
+  "startup_animation": true,
+  "sources": {
+    "crtsh":       { "enabled": true, "rate_per_second": 1,   "timeout_seconds": 120 },
+    "wayback":     { "enabled": true, "rate_per_second": 1,   "timeout_seconds": 120 },
+    "commoncrawl": { "enabled": true, "rate_per_second": 1,   "timeout_seconds": 120 },
+    "urlscan":     { "enabled": true, "rate_per_second": 0.5, "timeout_seconds": 60 },
+    "otx":         { "enabled": true, "rate_per_second": 1,   "timeout_seconds": 60 }
+  }
+}
