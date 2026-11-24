@@ -19,9 +19,8 @@
 
 ## What is SENTRIX
 
-I built SENTRIX because my recon notes kept ending up scattered across tools that each remember a different slice of a target. SENTRIX pulls what public datasets already know about a domain into one project, normalizes it, checks every result against the scope I declared, and keeps the full trail of who reported what.
-
-It is **passive by design**. It talks to public datasets (certificate transparency, web archives, crawl indexes, URL scan databases). It never sends a request to the target, never fuzzes, never tests credentials, never exploits anything. A discovered endpoint is only a discovered endpoint: SENTRIX will not call anything vulnerable.
+I built SENTRIX because my recon notes kept ending up scattered across tools that each remember a different slice of a target. SENTRIX pulls what public datasets already know about a domain into one project normalizes it checks every result against the scope I declared, and keeps the full trail of who reported what.
+It is **passive by design**. It talks to public datasets (certificate transparency web archives crawl indexes URL scan databases). It never sends a request to the target never fuzzes never tests credentials never exploits anything. A discovered endpoint is only a discovered endpoint: SENTRIX will not call anything vulnerable.
 
 - Single static binary, no Python, no Docker, no CGO, **zero third-party Go dependencies**
 - Linux and Windows, amd64 and arm64
