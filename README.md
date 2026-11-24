@@ -1,4 +1,9 @@
 <p align="center">
+  <a href="https://monsifhmouri.github.io/sentrix/">
+    <img src="https://img.shields.io/badge/▶_WATCH_PROJECT_SENTRIX-000000?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch SENTRIX VID">
+  </a>
+</p>
+<p align="center">
   <img src="SENTRIX.png" alt="SENTRIX" width="600">
 </p>
 <h1 align="center">SENTRIX</h1>
