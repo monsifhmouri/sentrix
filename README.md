@@ -10,7 +10,10 @@
 </p>
 <p align="center">Engineered by <b>MONSIF HMOURI</b> (MONSTR MIND) · <b>MONSTR MIND LABS</b><br><a href="https://github.com/monsifhmouri">github.com/monsifhmouri</a></p>
 
----
+[![Telegram](https://img.shields.io/badge/Telegram-Contact-blue?style=flat-square&logo=telegram)](http://t.me/monstr_m1nd)
+[![Instagram](https://img.shields.io/badge/Instagram-Follow-purple?style=flat-square&logo=instagram)](https://www.instagram.com/httpx.mrmonsif/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/monsifhmouri/)
+
 
 ## What is SENTRIX
 
