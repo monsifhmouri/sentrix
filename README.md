@@ -1,5 +1,7 @@
+<p align="center">
+  <img src="SENTRIX.png" alt="SENTRIX" width="600">
+</p>
 <h1 align="center">SENTRIX</h1>
-<p align="center"><b>ADVANCED ATTACK SURFACE INTELLIGENCE</b></p>
 <p align="center">Passive reconnaissance for authorized bug bounty research</p>
 <p align="center">
 <img alt="Go" src="https://img.shields.io/badge/Go-1.22+-00ADD8?logo=go&logoColor=white">
