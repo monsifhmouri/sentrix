@@ -2,7 +2,8 @@
 
 ## Reporting a vulnerability in SENTRIX
 Please report privately to the developer through the contact options on
-https://github.com/monsifhmouri rather than opening a public issue. Include
+[![Telegram](https://img.shields.io/badge/Telegram-Contact-blue?style=flat-square&logo=telegram)](http://t.me/monstr_m1nd)
+[![Instagram](https://img.shields.io/badge/Instagram-Follow-purple?style=flat-square&logo=instagram)](https://www.instagram.com/httpx.mrmonsif/) rather than opening a public issue. Include
 the version (`sentrix version`), your OS, and steps to reproduce.
 
 ## Design notes
