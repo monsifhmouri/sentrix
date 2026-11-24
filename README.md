@@ -48,7 +48,7 @@ You only need Go **1.22+** to build. The resulting binary is standalone.
 
 ### Linux
 ```bash
-git clone <repository-url> sentrix && cd sentrix
+git clone https://github.com/monsifhmouri/sentrix && cd sentrix
 make build
 sudo install bin/sentrix /usr/local/bin/sentrix
 sentrix version
@@ -72,16 +72,16 @@ cd dist && sha256sum -c SHA256SUMS
 
 ## Quick start
 ```bash
-# 1. review and run a passive scan (you are asked to confirm before any request is sent)
+# 1 review and run a passive scan (you are asked to confirm before any request is sent)
 sentrix scan -name acme -domain example.com -scope exclude:dev.example.com
 
-# 2. browse what was found, offline
+# 2 browse what was found, offline
 sentrix show -name acme -scope in -class graphql
 
-# 3. export a report
+# 3 export a report
 sentrix export -name acme -format html,csv -out ./reports
 
-# 4. come back later and run it again; only new findings are added
+# 4 come back later and run it again; only new findings are added
 sentrix rescan -name acme
 ```
 Running `sentrix` with no arguments opens the interactive menu instead.
@@ -263,13 +263,13 @@ Keys are never printed. `sentrix config` masks them.
 ```
 sources -> discovery -> intelligence -> storage -> reporting
 ```
-1. **Collect.** Each source runs in a bounded worker pool with its own rate limiter and timeout.
-2. **Normalize.** URLs are canonicalized; the original string is kept as part of the observation.
-3. **Label scope.** Every record gets `in-scope` or `out-of-scope` plus the reason.
-4. **Classify.** Endpoint class comes from the URL path only and is stored as `inferred (confidence): rule`.
-5. **Correlate.** Records are deduplicated under the chosen mode. Observations are never merged away; they are only skipped when they are exactly identical.
-6. **Score.** `high` confidence means two or more distinct sources reported it, `medium` means one. This measures corroboration, not that the asset is live and not that it is risky.
-7. **Persist.** Results are written atomically and a snapshot (total, new, in-scope, hosts, endpoints) is appended for historical comparison.
+1 **Collect.** Each source runs in a bounded worker pool with its own rate limiter and timeout.
+2 **Normalize.** URLs are canonicalized; the original string is kept as part of the observation.
+3 **Label scope.** Every record gets `in-scope` or `out-of-scope` plus the reason.
+4 **Classify.** Endpoint class comes from the URL path only and is stored as `inferred (confidence): rule`.
+5 **Correlate.** Records are deduplicated under the chosen mode. Observations are never merged away; they are only skipped when they are exactly identical.
+6 **Score.** `high` confidence means two or more distinct sources reported it, `medium` means one. This measures corroboration, not that the asset is live and not that it is risky.
+7 **Persist.** Results are written atomically and a snapshot (total, new, in-scope, hosts, endpoints) is appended for historical comparison.
 
 URLs also register their host as a host record, once per source.
 
