@@ -3,6 +3,7 @@ package config
 import (
 	"os"
 	"path/filepath"
+	"runtime"
 	"strings"
 	"testing"
 )
@@ -56,6 +57,10 @@ func TestEnvOverridesFileAndRedaction(t *testing.T) {
 }
 
 func TestSavePermissions(t *testing.T) {
+	if runtime.GOOS == "windows" {
+		t.Skip("Unix file permission bits are not fully supported on Windows")
+	}
+
 	path := filepath.Join(t.TempDir(), "sub", "c.json")
 	if err := Default().Save(path); err != nil {
 		t.Fatal(err)
