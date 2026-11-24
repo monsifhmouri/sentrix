@@ -56,7 +56,7 @@ sentrix version
 
 ### Windows (PowerShell)
 ```powershell
-git clone <repository-url> sentrix; cd sentrix
+git clone https://github.com/monsifhmouri/sentrix and cd sentrix
 go build -trimpath -o sentrix.exe ./cmd/sentrix
 .\sentrix.exe version
 ```
